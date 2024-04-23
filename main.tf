@@ -38,6 +38,12 @@ resource "aws_route_table" "my_route_table" {
   }
 }
 
+# SubnetとRoute tableの関連付け
+resource "aws_route_table_association" "my_public_rt_associate" {
+  subnet_id      = aws_subnet.my_subnet.id
+  route_table_id = aws_route_table.my_route_table.id
+}
+
 # セキュリティグループを作成し、SSHとHTTPをすべての範囲で許可
 resource "aws_security_group" "my_sg" {
   vpc_id = aws_vpc.my_vpc.id
