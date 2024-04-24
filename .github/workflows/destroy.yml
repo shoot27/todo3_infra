@@ -4,7 +4,7 @@ on:
 
 jobs:
   terraform:
-    name: "Terraform"
+    name: "destroy"
     runs-on: ubuntu-latest
     environment: production
 
