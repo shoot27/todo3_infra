@@ -7,7 +7,7 @@ vpc_name = "vpc-todo-tajime"
 #サブネット
 snet_public_name = "snet-public-tajime"
 snet_private_name = "snet-private-tajime"
-availability_zone = "ap-northeast-1"
+availability_zone = "ap-northeast-1a"
 
 #インターネットゲートウェイ
 igw_name = "igw-todo-tajime"
